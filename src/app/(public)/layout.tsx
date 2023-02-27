@@ -1,4 +1,5 @@
 import './globals.css'
+import {MyThemeProvider} from '../../styles/MyThemeProvider'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MyThemeProvider>{children}</MyThemeProvider>
+        </body>
     </html>
   )
 }
