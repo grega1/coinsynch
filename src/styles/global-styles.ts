@@ -1,4 +1,5 @@
-import {createGlobalStyle} from 'styled-components';
+'use client';
+import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 import { theme } from './theme';
 
@@ -61,8 +62,8 @@ export const Button = styled.button<IButtonProps>`
   font-weight: 400;
   cursor: pointer;
   width: ${(props) => props.width || 'min-content'};
-  font-size: ${(props) => props.fontSize || '36px'};
-  height:48px;
+  font-size: ${(props) => props.fontSize || '14px'};
+  height:32px;
 `
 interface ISpanProps{
   color?:string;

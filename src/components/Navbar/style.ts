@@ -7,12 +7,13 @@ const {
 
 export const NavContainer = styled.nav`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height:64px;
-  background-color: #fff;
-  padding:${({ theme }) => theme.sizes.marginDesktop};
+  background-color: red;
+  padding: 0 32px;
 `
 export const NavLogoBox = styled.div`
 width:120px;
