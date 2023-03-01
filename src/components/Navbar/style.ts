@@ -12,16 +12,15 @@ export const NavContainer = styled.nav`
   align-items: center;
   width: 100%;
   height:64px;
-  background-color: red;
+  background-color: white;
   padding: 0 32px;
 `
 export const NavLogoBox = styled.div`
 width:120px;
-height:100%;
 display:flex;
 gap:8px;
 `
-export const NavLetter = styled.div`	
+export const NavLetter = styled.div`
 width:auto;
 display:flex;
 gap:8px;

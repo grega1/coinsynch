@@ -1,5 +1,8 @@
+import CtaSection from "components/CtaSection";
+import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import Head from "next/head";
+
 
 
 export const metadata = {
@@ -13,6 +16,8 @@ const Home = ({ children }: { children: React.ReactNode }) => {
       <title>Home</title>
     </Head>
     <Navbar />
+    <CtaSection />
+    <Footer />
 
     </>
   );

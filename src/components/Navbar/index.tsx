@@ -20,7 +20,7 @@ export default function Navbar(){
             </div>
             <Span>ETH</Span>
           </NavLetter>
-          <div>
+          <div style={{display: 'flex', gap:'24px', justifyContent: 'center', alignItems: 'center'}}>
             <Span>Sign In</Span>
             <Button width="100px">Sign Up</Button>
           </div>
