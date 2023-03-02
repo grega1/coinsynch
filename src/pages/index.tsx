@@ -1,6 +1,9 @@
 import CtaSection from "components/CtaSection";
 import Footer from "components/Footer";
 import Navbar from "components/Navbar";
+import NewsLetter from "components/NewsLetter";
+import SoluctionSection from "components/SoluctionSection";
+import TopCryptos from "components/TopCryptos";
 import Head from "next/head";
 
 
@@ -17,6 +20,9 @@ const Home = ({ children }: { children: React.ReactNode }) => {
     </Head>
     <Navbar />
     <CtaSection />
+    <SoluctionSection />
+    <TopCryptos />
+    <NewsLetter />
     <Footer />
 
     </>

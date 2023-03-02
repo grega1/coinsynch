@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     vertical-align: baseline;
     list-style: none;
     letter-spacing: 0.025rem;
+    font-family:"Roboto",sans-serif;
   }
 
   body {
@@ -26,7 +27,8 @@ export const GlobalStyle = createGlobalStyle`
       flex-direction: column;
       align-items:center;
       width: 100%;
-    }
+      font-family:"Roboto",sans-serif;
+        }
   }
 
   blockquote, q {
@@ -57,7 +59,7 @@ interface IButtonProps {
 export const Button = styled.button<IButtonProps>`
  background-color: ${primaryYellow};
   color: ${white};
-  border-radius:32px; 
+  border-radius:32px;
   padding: 8px 16px;
   font-weight: 400;
   cursor: pointer;
@@ -67,7 +69,10 @@ export const Button = styled.button<IButtonProps>`
 `
 interface ISpanProps{
   color?:string;
+  fontSize?:string;
 }
 export const Span = styled.span<ISpanProps>`
   color: ${(props) => props.color || textBase};
+  font-size: ${(props) => props.fontSize ||'14px'}
 `
+
